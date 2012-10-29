@@ -73,15 +73,13 @@ class Module implements ConsoleBannerProviderInterface, ConsoleUsageProviderInte
         );
     }
 
-    public function getConsoleBanner(Console $console){
-        return
-        "==========================================================\n".
-        "    Vivo 2 CLI                                            \n".
-        "==========================================================\n"
-        ;
+    public function getConsoleBanner(Console $console)
+    {
+        return "Vivo 2 CLI\n";
     }
 
-    public function getConsoleUsage(Console $console){
+    public function getConsoleUsage(Console $console)
+    {
         return array('Available commands:',
                 array ('indexer', 'Perform operations on indexer..'),
                 array ('info','Show informations about CMS instance.'),
